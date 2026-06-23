@@ -175,73 +175,7 @@
 
   /* SECTIONS */
   section { padding: 96px 40px; overflow-x: clip; scroll-margin-top: 90px; }
-  @media (max-width: 768px) {
-    /* ====== Global mobile scale ====== */
-    body { font-size: 17px; }
-
-    header { padding: 0 20px; height: 60px; top: 0; }
-    nav { display: none; }
-    .hamburger { display: flex; }
-
-    /* Buttons & tap targets */
-    .btn-primary, .btn-secondary { font-size: 15px; padding: 15px 22px; }
-    .sticky-cta { bottom: 16px; right: 16px; font-size: 13px; padding: 12px 18px; }
-
-    /* ====== Hero ====== */
-    .hero-main { grid-template-columns: 1fr; padding: 0; }
-    .hero-right { display: none; }
-    .hero-left { padding: 56px 20px 40px; }
-    .hero-left h1 { font-size: clamp(34px, 7.2vw, 44px); }
-    .hero-sub { font-size: 16px; max-width: 36ch; }
-
-    /* Section rhythm */
-    section { padding: 72px 20px; }
-
-    /* ====== Über mich: untereinander ====== */
-    #ueber-mich { padding: 60px 20px; }
-    .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
-    .ueber-foto-col { align-items: center; padding: 32px 20px; }
-    .ueber-content-col { padding: 32px 20px; }
-    .ueber-content-col h2 { font-size: clamp(26px, 6.2vw, 34px); }
-    .ueber-content-col p { font-size: 15.5px; }
-    .ueber-badges { grid-template-columns: 1fr !important; }
-    .ueber-mini { justify-content: center; }
-    .foto-placeholder { max-width: 240px; margin: 0 auto; }
-
-    /* ====== Leistungen: Kacheln untereinander ====== */
-    #leistungen { padding: 60px 20px; }
-    .leistungen-header { margin-bottom: 24px; }
-    .leistungen-list { grid-template-columns: 1fr !important; }
-    .leistung-row { border-right: none !important; padding: 22px 18px; }
-    .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
-    .leistung-row:last-child { border-bottom: none !important; }
-    .leistung-row .lr-body h3 { font-size: 17px; }
-    .leistung-row .lr-body p { font-size: 15px; }
-
-    /* ====== Ablauf ====== */
-    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
-    .ablauf-card { padding: 22px 20px; }
-    .ablauf-card:hover { transform: none; }
-    .ablauf-summary { flex-direction: column; align-items: flex-start; }
-
-    /* ====== Warum / sonstige Grids ====== */
-    .warum-layout { grid-template-columns: 1fr; gap: 24px; }
-
-    /* ====== Termin ====== */
-    .termin-layout { grid-template-columns: 1fr; gap: 16px; }
-    .termin-left { padding: 28px 20px; }
-
-    /* ====== Kontakt ====== */
-    #kontakt { padding: 72px 20px; }
-    .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
-    .kontakt-form-box { padding: 28px 20px; }
-    .fs-label { font-size: 13px; }
-    .fs-input, .fs-textarea { font-size: 15px; padding: 14px 14px; }
-
-    footer { padding: 40px 20px; }
-    .footer-inner { flex-direction: column; align-items: flex-start; }
-    .hero-siegel .siegel-box:nth-child(3) { display: none; }
-  }
+  
 
   .section-inner { max-width: 1100px; margin: 0 auto; }
   .section-label { font-size: 10.5px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--mint-dark); margin-bottom: 10px; }
@@ -343,28 +277,7 @@
 .ueber-cta .arrow { transition: transform 0.2s; }
 .ueber-cta:hover .arrow { transform: translateX(3px); }
 
-@media (max-width: 900px) {
-  /* Über mich: untereinander */
-  .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
-  .ueber-content-col { border-left: none; border-top: 1px solid var(--gray-mid); padding: 32px 20px; }
-  .ueber-foto-col { align-items: center; padding: 32px 20px; }
-  .ueber-mini { justify-content: center; }
-  .ueber-badges { grid-template-columns: 1fr 1fr; }
-  .foto-placeholder { max-width: 260px; }
 
-  /* Leistungen: alle Kacheln untereinander */
-  .leistungen-list { grid-template-columns: 1fr !important; }
-  .leistung-row { border-right: none !important; }
-  .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
-  .leistung-row:last-child { border-bottom: none !important; }
-
-  /* Warum/Termin/Kontakt */
-  .warum-layout { grid-template-columns: 1fr; gap: 24px; }
-  .termin-layout, .termin-launch { grid-template-columns: 1fr; }
-  .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
-  .modal-grid { grid-template-columns: 1fr; }
-  .modal-left { border-right: none; border-bottom: 1px solid rgba(7,21,37,0.08); }
-}
 
 /* ═══ LEISTUNGEN ═══ */
   #leistungen { background: #f0f4f8; }
@@ -582,12 +495,7 @@
   .ablauf-summary-text { color: rgba(255,255,255,0.55); font-size: 13.5px; }
   .ablauf-summary-text strong { color: #fff; font-weight: 700; }
 
-  @media (max-width: 768px) {
-    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
-    .ablauf-card { padding: 22px 20px; }
-    .ablauf-card:hover { transform: none; }
-    .ablauf-summary { flex-direction: column; align-items: flex-start; }
-  }
+  
 
   /* ═══ WARUM LH ═══ */
   #warum { background: #f0f4f8; padding: 96px 40px; }
@@ -659,11 +567,7 @@
   .modal-hint { margin-top: 16px; font-size: 12px; color: var(--text-light); padding: 12px 14px; border-radius: 12px; background: rgba(94,236,212,0.10); border: 1px solid rgba(29,184,154,0.20); }
   .modal-right { padding: 0; background: #fff; }
 
-  @media (max-width: 900px) {
-    .termin-launch { grid-template-columns: 1fr; }
-    .modal-grid { grid-template-columns: 1fr; }
-    .modal-left { border-right: none; border-bottom: 1px solid rgba(7,21,37,0.08); }
-  }
+  
 
   /* ═══ KONTAKT ═══ */
   #kontakt { background: #f0f4f8; padding: 96px 40px; }
@@ -786,7 +690,86 @@
   .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s; padding: 0 28px; font-size: 13.5px; color: var(--text-light); line-height: 1.75; }
   .faq-item.open .faq-a { max-height: 340px; padding: 0 28px 22px; }
 
-  @media (max-width: 768px) {
+  
+
+
+  /* ═══ RESPONSIVE ═══ */
+
+  /* ═══ RESPONSIVE ═══ */
+@media (max-width: 768px) {
+    /* ====== Global mobile scale ====== */
+    body { font-size: 17px; }
+
+    header { padding: 0 20px; height: 60px; top: 0; }
+    nav { display: none; }
+    .hamburger { display: flex; }
+
+    /* Buttons & tap targets */
+    .btn-primary, .btn-secondary { font-size: 15px; padding: 15px 22px; }
+    .sticky-cta { bottom: 16px; right: 16px; font-size: 13px; padding: 12px 18px; }
+
+    /* ====== Hero ====== */
+    .hero-main { grid-template-columns: 1fr; padding: 0; }
+    .hero-right { display: none; }
+    .hero-left { padding: 56px 20px 40px; }
+    .hero-left h1 { font-size: clamp(34px, 7.2vw, 44px); }
+    .hero-sub { font-size: 16px; max-width: 36ch; }
+
+    /* Section rhythm */
+    section { padding: 72px 20px; }
+
+    /* ====== Über mich: untereinander ====== */
+    #ueber-mich { padding: 60px 20px; }
+    .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
+    .ueber-foto-col { align-items: center; padding: 32px 20px; }
+    .ueber-content-col { padding: 32px 20px; }
+    .ueber-content-col h2 { font-size: clamp(26px, 6.2vw, 34px); }
+    .ueber-content-col p { font-size: 15.5px; }
+    .ueber-badges { grid-template-columns: 1fr !important; }
+    .ueber-mini { justify-content: center; }
+    .foto-placeholder { max-width: 240px; margin: 0 auto; }
+
+    /* ====== Leistungen: Kacheln untereinander ====== */
+    #leistungen { padding: 60px 20px; }
+    .leistungen-header { margin-bottom: 24px; }
+    .leistungen-list { grid-template-columns: 1fr !important; }
+    .leistung-row { border-right: none !important; padding: 22px 18px; }
+    .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
+    .leistung-row:last-child { border-bottom: none !important; }
+    .leistung-row .lr-body h3 { font-size: 17px; }
+    .leistung-row .lr-body p { font-size: 15px; }
+
+    /* ====== Ablauf ====== */
+    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
+    .ablauf-card { padding: 22px 20px; }
+    .ablauf-card:hover { transform: none; }
+    .ablauf-summary { flex-direction: column; align-items: flex-start; }
+
+    /* ====== Warum / sonstige Grids ====== */
+    .warum-layout { grid-template-columns: 1fr; gap: 24px; }
+
+    /* ====== Termin ====== */
+    .termin-layout { grid-template-columns: 1fr; gap: 16px; }
+    .termin-left { padding: 28px 20px; }
+
+    /* ====== Kontakt ====== */
+    #kontakt { padding: 72px 20px; }
+    .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
+    .kontakt-form-box { padding: 28px 20px; }
+    .fs-label { font-size: 13px; }
+    .fs-input, .fs-textarea { font-size: 15px; padding: 14px 14px; }
+
+    footer { padding: 40px 20px; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .hero-siegel .siegel-box:nth-child(3) { display: none; }
+  
+
+    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
+    .ablauf-card { padding: 22px 20px; }
+    .ablauf-card:hover { transform: none; }
+    .ablauf-summary { flex-direction: column; align-items: flex-start; }
+  
+
     header { padding: 0 20px; height: 60px; top: 0; }
     nav { display: none; }
     .hamburger { display: flex; }
@@ -801,7 +784,37 @@
     .ablauf-row { grid-template-columns: 1fr; }
     footer { padding: 40px 20px; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
-  }
+  
+}
+
+@media (max-width: 900px) {
+  /* Über mich: untereinander */
+  .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
+  .ueber-content-col { border-left: none; border-top: 1px solid var(--gray-mid); padding: 32px 20px; }
+  .ueber-foto-col { align-items: center; padding: 32px 20px; }
+  .ueber-mini { justify-content: center; }
+  .ueber-badges { grid-template-columns: 1fr 1fr; }
+  .foto-placeholder { max-width: 260px; }
+
+  /* Leistungen: alle Kacheln untereinander */
+  .leistungen-list { grid-template-columns: 1fr !important; }
+  .leistung-row { border-right: none !important; }
+  .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
+  .leistung-row:last-child { border-bottom: none !important; }
+
+  /* Warum/Termin/Kontakt */
+  .warum-layout { grid-template-columns: 1fr; gap: 24px; }
+  .termin-layout, .termin-launch { grid-template-columns: 1fr; }
+  .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
+  .modal-grid { grid-template-columns: 1fr; }
+  .modal-left { border-right: none; border-bottom: 1px solid rgba(7,21,37,0.08); }
+
+
+    .termin-launch { grid-template-columns: 1fr; }
+    .modal-grid { grid-template-columns: 1fr; }
+    .modal-left { border-right: none; border-bottom: 1px solid rgba(7,21,37,0.08); }
+  
+}
 </style>
 </head>
 <body>

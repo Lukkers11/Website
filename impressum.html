@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum | LH Energieberatung</title>
+  <meta name="robots" content="noindex,follow" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+      --navy: #071525;
+      --mint: #5EECD4;
+      --mint-dark: #1DB89A;
+      --gray-light: #f0f4f8;
+      --gray-mid: #dce6f0;
+      --text-mid: #334e68;
+      --text-light: #627d98;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--navy);
+      background: #ffffff;
+      overflow-x: hidden;
+      padding-top: 66px;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(7,21,37,0.97); backdrop-filter: blur(8px);
+      padding: 0 40px; height: 66px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(94,236,212,0.12);
+    }
+    .lh-logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .lh-logo svg.rings { width: 32px; height: 32px; flex-shrink: 0; }
+    .lh-logo .text-block { display: flex; flex-direction: column; justify-content: flex-end; }
+    .lh-logo .name-row { display: flex; align-items: flex-end; gap: 7px; line-height: 1; }
+    .lh-logo .lh { font-weight: 700; font-size: 24px; color: #fff; letter-spacing: 1px; line-height: 1; }
+    .lh-logo .eb { font-weight: 300; font-size: 9.5px; color: var(--mint); letter-spacing: 2.5px; padding-bottom: 4px; line-height: 1; }
+    .lh-logo .divider { margin-top: 4px; height: 1.5px; border-radius: 1px; background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 60%, transparent 100%); }
+
+    .back-link {
+      color: rgba(255,255,255,0.70);
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+      padding-bottom: 3px;
+      border-bottom: 1.5px solid transparent;
+    }
+    .back-link:hover { color: var(--mint); border-bottom-color: var(--mint); }
+
+    /* MAIN */
+    main { padding: 72px 40px 96px; }
+    .wrap { max-width: 680px; margin: 0 auto; }
+
+    /* Eyebrow + Titel */
+    .page-eyebrow {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--mint-dark);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--navy);
+      margin-bottom: 48px;
+    }
+
+    /* Blöcke */
+    .imp-block {
+      padding: 28px 0;
+      border-top: 1px solid var(--gray-mid);
+    }
+    .imp-block:last-of-type {
+      border-bottom: 1px solid var(--gray-mid);
+    }
+
+    .imp-block h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--mint-dark);
+      margin-bottom: 10px;
+    }
+
+    .imp-block p {
+      font-size: 14.5px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .imp-block p strong {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    a { color: var(--mint-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Footer-Nav */
+    .legal-nav {
+      margin-top: 56px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .legal-nav a {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--gray-mid);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .legal-nav a:hover { border-color: var(--mint-dark); color: var(--mint-dark); }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      padding: 40px;
+      border-top: 1px solid rgba(94,236,212,0.1);
+      text-align: center;
+    }
+    .footer-links { display: inline-flex; gap: 24px; align-items: center; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { font-size: 12.5px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--mint); }
+    .footer-copy { font-size: 11.5px; color: rgba(255,255,255,0.25); margin-top: 10px; }
+
+    @media (max-width: 768px) {
+      header { padding: 0 20px; height: 60px; }
+      main { padding: 48px 24px 72px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="lh-logo" href="/">
+      <svg class="rings" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+        <path d="M 31.36 6.26 A 22 22 0 1 1 24.64 6.26" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M 31.36 15.44 A 13 13 0 1 1 24.64 15.44" stroke="#5EECD4" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="text-block">
+        <div class="name-row"><span class="lh">LH</span><span class="eb">Energieberatung</span></div>
+        <div class="divider"></div>
+      </div>
+    </a>
+    <a class="back-link" href="index.html">← Zurück zur Website</a>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <p class="page-eyebrow">Rechtliches</p>
+      <h1>Impressum</h1>
+
+      <div class="imp-block">
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+          <strong>Lukas Hermesmann</strong><br>
+          Südstr. 24<br>
+          47798 Krefeld
+        </p>
+      </div>
+
+      <div class="imp-block">
+        <h2>Kontakt</h2>
+        <p>
+          E-Mail: <a href="mailto:info@lhenergieberatung.de">info@lhenergieberatung.de</a>
+        </p>
+      </div>
+
+      <div class="imp-block">
+        <h2>Steuerliche Angaben</h2>
+        <p>
+          Gemäß § 19 UStG wird keine Umsatzsteuer erhoben und ausgewiesen (Kleinunternehmerregelung).
+        </p>
+      </div>
+
+      <div class="imp-block">
+        <h2>Berufsbezeichnung</h2>
+        <p>
+          Energieberater für Wohngebäude M.Eng.<br>
+          Eingetragener Energieeffizienz-Experte<br>
+          <span style="font-size:13px; color: var(--text-light);">Expertenliste BEG · Deutsche Energie-Agentur dena, Berlin</span>
+        </p>
+      </div>
+
+      <div class="imp-block">
+        <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+        <p>
+          <strong>Lukas Hermesmann</strong><br>
+          Südstr. 24<br>
+          47798 Krefeld
+        </p>
+      </div>
+
+      <div class="imp-block">
+        <h2>Haftung für Inhalte</h2>
+        <p>
+          Alle Inhalte dieser Website wurden sorgfältig erstellt und geprüft. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf dieser Website nach den allgemeinen Gesetzen verantwortlich.
+        </p>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> LH Energieberatung · Eingetragener Energieeffizienz-Experte</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

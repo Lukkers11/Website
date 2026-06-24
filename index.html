@@ -699,6 +699,31 @@
   /* ====== Global ====== */
   body { font-size: 17px; }
 
+  /* ====== Calendly Modal (Fix: close button always reachable) ====== */
+  .modal-overlay.open {
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal {
+    max-height: calc(100dvh - 24px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-close {
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    z-index: 50;
+  }
+
+  .modal-right .calendly-inline-widget {
+    height: min(640px, 72dvh) !important;
+    min-height: 380px;
+  }
+
   header { padding: 0 20px; height: 60px; top: 0; }
   nav { display: none; }
   .hamburger { display: flex; }

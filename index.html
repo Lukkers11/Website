@@ -695,96 +695,75 @@
 
   /* ═══ RESPONSIVE ═══ */
 
-  /* ═══ RESPONSIVE ═══ */
 @media (max-width: 768px) {
-    /* ====== Global mobile scale ====== */
-    body { font-size: 17px; }
+  /* ====== Global ====== */
+  body { font-size: 17px; }
 
-    header { padding: 0 20px; height: 60px; top: 0; }
-    nav { display: none; }
-    .hamburger { display: flex; }
+  header { padding: 0 20px; height: 60px; top: 0; }
+  nav { display: none; }
+  .hamburger { display: flex; }
 
-    /* Buttons & tap targets */
-    .btn-primary, .btn-secondary { font-size: 15px; padding: 15px 22px; }
-    .sticky-cta { bottom: 16px; right: 16px; font-size: 13px; padding: 12px 18px; }
+  /* Buttons & tap targets */
+  .btn-primary, .btn-secondary { font-size: 15px; padding: 15px 22px; }
+  .sticky-cta { bottom: 16px; right: 16px; font-size: 13px; padding: 12px 18px; }
 
-    /* ====== Hero ====== */
-    .hero-main { grid-template-columns: 1fr; padding: 0; }
-    .hero-right { display: none; }
-    .hero-left { padding: 56px 20px 40px; }
-    .hero-left h1 { font-size: clamp(34px, 7.2vw, 44px); }
-    .hero-sub { font-size: 16px; max-width: 36ch; }
+  /* ====== Hero ====== */
+  .hero-main { grid-template-columns: 1fr; padding: 0; }
+  .hero-right { display: none; }
+  .hero-left { padding: 56px 20px 40px; }
+  .hero-left h1 { font-size: clamp(34px, 7.2vw, 44px); }
+  .hero-sub { font-size: 16px; max-width: 36ch; }
 
-    /* Section rhythm */
-    section { padding: 72px 20px; }
+  /* ====== Sections ====== */
+  section { padding: 72px 20px; }
 
-    /* ====== Über mich: untereinander ====== */
-    #ueber-mich { padding: 60px 20px; }
-    .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
-    .ueber-foto-col { align-items: center; padding: 32px 20px; }
-    .ueber-content-col { padding: 32px 20px; }
-    .ueber-content-col h2 { font-size: clamp(26px, 6.2vw, 34px); }
-    .ueber-content-col p { font-size: 15.5px; }
-    .ueber-badges { grid-template-columns: 1fr !important; }
-    .ueber-mini { justify-content: center; }
-    .foto-placeholder { max-width: 240px; margin: 0 auto; }
+  /* ====== Über mich ====== */
+  #ueber-mich { padding: 60px 20px; }
+  .ueber-split { grid-template-columns: 1fr !important; min-height: auto !important; }
+  .ueber-foto-col { align-items: center; padding: 32px 20px; }
+  .ueber-content-col { padding: 32px 20px; }
+  .ueber-content-col h2 { font-size: clamp(26px, 6.2vw, 34px); }
+  .ueber-content-col p { font-size: 15.5px; }
+  .ueber-badges { grid-template-columns: 1fr !important; }
+  .ueber-mini { justify-content: center; }
+  .foto-placeholder { max-width: 240px; margin: 0 auto; }
 
-    /* ====== Leistungen: Kacheln untereinander ====== */
-    #leistungen { padding: 60px 20px; }
-    .leistungen-header { margin-bottom: 24px; }
-    .leistungen-list { grid-template-columns: 1fr !important; }
-    .leistung-row { border-right: none !important; padding: 22px 18px; }
-    .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
-    .leistung-row:last-child { border-bottom: none !important; }
-    .leistung-row .lr-body h3 { font-size: 17px; }
-    .leistung-row .lr-body p { font-size: 15px; }
+  /* ====== Leistungen ====== */
+  #leistungen { padding: 60px 20px; }
+  .leistungen-header { margin-bottom: 24px; }
+  .leistungen-list { grid-template-columns: 1fr !important; }
+  .leistung-row { border-right: none !important; padding: 22px 18px; }
+  .leistung-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--gray-mid) !important; }
+  .leistung-row:last-child { border-bottom: none !important; }
+  .leistung-row .lr-body h3 { font-size: 17px; }
+  .leistung-row .lr-body p { font-size: 15px; }
 
-    /* ====== Ablauf ====== */
-    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
-    .ablauf-card { padding: 22px 20px; }
-    .ablauf-card:hover { transform: none; }
-    .ablauf-summary { flex-direction: column; align-items: flex-start; }
+  /* ====== Ablauf ====== */
+  .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
+  .ablauf-card { padding: 22px 20px; }
+  .ablauf-card:hover { transform: none; }
+  .ablauf-summary { flex-direction: column; align-items: flex-start; }
 
-    /* ====== Warum / sonstige Grids ====== */
-    .warum-layout { grid-template-columns: 1fr; gap: 24px; }
+  /* ====== Warum ====== */
+  .warum-layout { grid-template-columns: 1fr; gap: 24px; }
 
-    /* ====== Termin ====== */
-    .termin-layout { grid-template-columns: 1fr; gap: 16px; }
-    .termin-left { padding: 28px 20px; }
+  /* ====== Termin ====== */
+  .termin-layout { grid-template-columns: 1fr; gap: 16px; }
+  .termin-left { padding: 28px 20px; }
 
-    /* ====== Kontakt ====== */
-    #kontakt { padding: 72px 20px; }
-    .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
-    .kontakt-form-box { padding: 28px 20px; }
-    .fs-label { font-size: 13px; }
-    .fs-input, .fs-textarea { font-size: 15px; padding: 14px 14px; }
+  /* ====== Kontakt ====== */
+  #kontakt { padding: 72px 20px; }
+  .kontakt-layout { grid-template-columns: 1fr; gap: 24px; }
+  .kontakt-form-box { padding: 28px 20px; }
+  .fs-label { font-size: 13px; }
+  .fs-input, .fs-textarea { font-size: 15px; padding: 14px 14px; }
 
-    footer { padding: 40px 20px; }
-    .footer-inner { flex-direction: column; align-items: flex-start; }
-    .hero-siegel .siegel-box:nth-child(3) { display: none; }
-  
+  /* ====== Footer ====== */
+  footer { padding: 40px 20px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
 
-    .ablauf-grid { grid-template-columns: 1fr; gap: 14px; }
-    .ablauf-card { padding: 22px 20px; }
-    .ablauf-card:hover { transform: none; }
-    .ablauf-summary { flex-direction: column; align-items: flex-start; }
-  
-
-    header { padding: 0 20px; height: 60px; top: 0; }
-    nav { display: none; }
-    .hamburger { display: flex; }
-    .sticky-cta { bottom: 16px; right: 16px; font-size: 12px; padding: 11px 18px; }
-    #hero { grid-template-columns: 1fr; }
-    .hero-right { display: none; }
-    .hero-left { padding: 60px 24px; }
-    section { padding: 72px 20px; }
-    .ueber-grid { grid-template-columns: 1fr; }
-    .foto-placeholder { max-width: 100%; aspect-ratio: 4/3; }
-    .kontakt-grid { grid-template-columns: 1fr; }
-    .ablauf-row { grid-template-columns: 1fr; }
-    footer { padding: 40px 20px; }
-    .footer-inner { flex-direction: column; align-items: flex-start; }
-  
+  /* Falls hero-siegel existiert */
+  .hero-siegel .siegel-box:nth-child(3) { display: none; }
 }
 
 @media (max-width: 900px) {
@@ -815,6 +794,50 @@
     .modal-left { border-right: none; border-bottom: 1px solid rgba(7,21,37,0.08); }
   
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE RESPONSIVENESS FIXES (Overflow/Grid shrink protection)
+   Ziel: verhindert "Desktop-Layout rausgezoomt" auf Mobile durch
+   ungewollte Überbreite + sorgt dafür, dass Breakpoints sauber greifen.
+   ─────────────────────────────────────────────────────────────── */
+
+html { overflow-x: clip; }
+body { overflow-x: clip; }
+
+/* Grid/Flex children dürfen schrumpfen (verhindert Überbreite durch Content) */
+.hero-left, .hero-right,
+.leistung-row,
+.warum-left, .warum-right,
+.kontakt-sidebar, .kontakt-form-box,
+.termin-left, .termin-right,
+.termin-launch-card,
+.modal-left, .modal-right,
+.ueber-foto-col, .ueber-content-col {
+  min-width: 0;
+}
+
+/* Grid-Spalten mit minmax(0, …) absichern (verhindert "content pushes grid wider") */
+.hero-main { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+.leistungen-list { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.warum-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.kontakt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+.termin-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.termin-launch { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
+.modal-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
+.ueber-split { grid-template-columns: minmax(0, 45%) minmax(0, 55%); }
+
+/* Lange Wörter/Links sauber umbrechen, statt Layout zu sprengen */
+.leistung-row .lr-body,
+.ueber-content-col,
+.warum-feature,
+.kontakt-form-box,
+.modal-left,
+.modal-right {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 </style>
 </head>
 <body>

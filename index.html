@@ -764,6 +764,29 @@
 
   /* Falls hero-siegel existiert */
   .hero-siegel .siegel-box:nth-child(3) { display: none; }
+
+  /* ====== Missing section padding overrides (ID rules have higher specificity than "section") ====== */
+  #warum { padding: 60px 20px; }
+  #termin { padding: 60px 20px; }
+  #faq { padding: 60px 20px; }
+
+  /* Mobile menu top must match mobile header height (60px, not 66px) */
+  .mobile-menu { top: 60px; }
+
+  /* Hero stats: tighten gap so items don't push layout wide */
+  .hero-stats { gap: 20px; }
+
+  /* FAQ: tighter question/answer padding on small screens */
+  .faq-q { padding: 18px 18px; font-size: 14px; }
+  .faq-a { padding: 0 18px; }
+  .faq-item.open .faq-a { padding: 0 18px 18px; }
+
+  /* Ablauf summary: tighter inner padding */
+  .ablauf-summary { padding: 18px 20px; }
+
+  /* Termin launch card */
+  .termin-launch-card { padding: 24px 20px; }
+  .termin-launch { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (max-width: 900px) {
@@ -817,15 +840,18 @@ body { overflow-x: clip; }
   min-width: 0;
 }
 
-/* Grid-Spalten mit minmax(0, …) absichern (verhindert "content pushes grid wider") */
-.hero-main { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
-.leistungen-list { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.warum-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.kontakt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
-.termin-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.termin-launch { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
-.modal-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
-.ueber-split { grid-template-columns: minmax(0, 45%) minmax(0, 55%); }
+/* Grid-Spalten mit minmax(0, …) absichern – nur auf Desktop aktiv,
+   damit Mobile-Breakpoints nicht überschrieben werden */
+@media (min-width: 901px) {
+  .hero-main { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+  .leistungen-list { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .warum-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .kontakt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+  .termin-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .termin-launch { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
+  .modal-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
+  .ueber-split { grid-template-columns: minmax(0, 45%) minmax(0, 55%); }
+}
 
 /* Lange Wörter/Links sauber umbrechen, statt Layout zu sprengen */
 .leistung-row .lr-body,
@@ -1073,7 +1099,7 @@ body { overflow-x: clip; }
         </div>
         <div class="ablauf-card-text">
           <h3>Beratungsbericht &amp; Sanierungsfahrplan</h3>
-          <p>Detaillierter Bericht mit Maßnahmenempfehlungen – auf Wunsch ergänzt durch einen iSFP mit 5 % Extra-Förderbonus.</p>
+          <p>Detaillierter Bericht mit Maßnahmenempfehlungen – auf Wunsch ergänzt durch einen iSFP mit 5 % Extra-Förderbonus.</p>
         </div>
         <div class="ablauf-card-meta">
           <span class="ablauf-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>ca. 1–2 Wochen</span>
@@ -1300,8 +1326,8 @@ body { overflow-x: clip; }
         </div>
       </a>
       <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href='/impressum'>Impressum</a>
+        <a href='/datenschutz'>Datenschutz</a>
       </div>
       <span class="footer-copy">© 2026 Lukas Hermesmann · Alle Rechte vorbehalten</span>
     </div>
